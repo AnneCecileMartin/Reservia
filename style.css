@@ -1,0 +1,122 @@
+html, body {
+    width: auto;
+    height: auto;
+    margin: 25px;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+    font-weight: 300;
+    font-style: bold;
+}
+
+/*header*/
+.topmenu ul {
+    list-style-type: none;
+    display: flex;    
+    justify-content: flex-end;  
+    justify-content: space-between;  
+    page-break-inside: auto;
+}
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+nav a:hover {
+    color: #0065FC;
+    text-decoration: none;
+    border-top: 2px solid #0065FC; /*pas pris en compte*/
+    padding-top: 25px;
+}
+nav a:visited {
+    color: #0065FC;
+    text-decoration: none;
+    border-top: 2px solid #0065FC;
+    padding-top: 25px;
+}
+li:nth-child(3n) {
+    font-weight: bold;
+    color: #0065FC;
+}
+/* Media responsive */
+@media screen and (max-width: 970px) {
+}
+
+/* Titres, filtres et formulaire */
+.sous-titres {
+    margin: 5px 35px 0 35px;
+}
+.filters {
+    color: #0065FC;
+    font-style: bold;  /* pas pris en compte*/
+}
+i#marker.fas.fa-map-marker-alt {    
+    background-color: #F2F2F2;
+    padding: 12px 15px 15px 15px;    
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+#button {
+    background-color: #0065FC;
+    color: white;
+    padding: 12px 15px 13px 15px; 
+    border: transparent;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+.input-field {
+    padding: 13px;
+    margin-left: -4px;
+    margin-right: -4px;
+    border: 1px solid #F2F2F2;
+}
+
+/* Parties photos */
+#carteshebergement {
+    border-radius: 13px;
+}
+
+.framemini {
+    border-radius: 13px;
+}
+
+/* notation */
+
+.blue {
+    color: #0065FC;
+}
+.grey {
+    color: #F2F2F2;
+}
+  
+/* Footer */
+.footmenu ul {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
+nav a
+{
+    text-decoration: none;
+    color: #000000;
+}
+nav a:hover
+{
+    color: #0065FC;
+    text-decoration: none;
+    border-top: none;
+    padding-top: 25px;
+}
+
+/*cadres {
+    background-color: #DEEBFF;
+}*/
