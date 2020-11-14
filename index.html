@@ -63,19 +63,29 @@
             </form>	
 
 <!-- Filtres -->
-            <h3>Filtres</h3>
-			<div class="filters">	
-				<a href="#" class="filter"><i class="fas fa-money-bill-wave-alt" aria-hidden="true"></i>Économique</a>
-				<a href="#" class="filter"><i class="fas fa-child" aria-hidden="true"></i> Familial</a>
-				<a href="#" class="filter"><i class="fas fa-heart" aria-hidden="true"></i>Romantique</a>
-				<a href="#" class="filter"><i class="fas fa-dog" aria-hidden="true"></i>Animaux autorisés</a>
-			</div>
+            <div id="allfilters">
+                <h3>Filtres</h3>
+			    <div class="filters">
+                    <div class="eco">	
+                        <a href="#" class="filter"><i class="fas fa-money-bill-wave-alt" aria-hidden="true">::before</i>
+                            <span>Économique</span></a></div>
+                    <div class="family">
+                        <a href="#" class="filter"><i class="fas fa-child" aria-hidden="true">::before</i>
+                            <span>Familial</span></a></div>
+                    <div class="romantic">
+                        <a href="#" class="filter"><i class="fas fa-heart" aria-hidden="true">::before</i>
+                            <span>Romantique</span></a></div>
+                    <div class="animals">
+                        <a href="#" class="filter"><i class="fas fa-dog" aria-hidden="true">::before</i>
+                            <span>Animaux autorisés</span></a></div>
+			    </div>
 
 <!-- résultats résumés-->
-			<div id=info>
-                <h2><i class="fas fa-info-circle" aria-hidden="true">::before</i>
-                <span>Plus de 500 logements sont disponibles dans cette ville</span></h2>
-			</div>
+			    <div class=info>
+                    <h2><i class="fas fa-info-circle" aria-hidden="true">::before</i>
+                    <span class="info500">Plus de 500 logements sont disponibles dans cette ville</span></h2>
+                </div>
+            </div>
 		</section>
 
 <!-- section 2 : hébergements & populaires -->
@@ -85,7 +95,7 @@
 			<h1>Hébergements à Marseille</h1>
 
 				<div id="framemini">
-                    <div id=cannebiere><a href="#">
+                    <div class=cannebiere><a href="#">
                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière">
                     </a>
 					<h4>Auberge La Cannebière</h4>
@@ -98,7 +108,7 @@
                             <i class="fas fa-star grey" aria-hidden="true">::before</i>
                         </div>
 				    </div></a>
-				    <div id="hotelport"><a href="#">
+				    <div class="hotelport"><a href="#">
                         <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port">
                     </a>
                     <h4>Hôtel du port</h4>
@@ -111,7 +121,7 @@
                             <i class="fas fa-star blue" aria-hidden="true">::before</i>
                         </div>
 				    </div></a>
-                    <div id="mouettes"><a href="#">
+                    <div class="mouettes"><a href="#">
                         <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les Mouettes">
                     </a>
                     <h4>Hôtel Les Mouettes</h4>
@@ -124,7 +134,7 @@
                             <i class="fas fa-star grey" aria-hidden="true">::before</i>
                         </div>
 				    </div></a>
-                    <div id=hotelmer><a href="#">
+                    <div class=hotelmer><a href="#">
                         <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                     </a>
                     <h4>Hôtel de la mer</h4>
@@ -137,7 +147,7 @@
                             <i class="fas fa-star grey" aria-hidden="true">::before</i>
                         </div>
 				    </div></a>
-                    <div id=panier><a href="#">
+                    <div class=panier><a href="#">
                         <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                     </a>
                     <h4>Auberge Le Panier</h4>
@@ -150,7 +160,7 @@
                             <i class="fas fa-star grey" aria-hidden="true">::before</i>
                         </div>
 				    </div></a>
-                    <div id=amina><a href="#">
+                    <div class=amina><a href="#">
                         <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                     </a>
                     <h4>Hôtel chez Amina</h4>
@@ -163,7 +173,7 @@
                         </div>
 				    </div></a>
 
-				<h3><a href="#">Afficher plus</a></h3>
+				<h3 class="more"><a href="#">Afficher plus</a></h3>
 
 <!-- Bloc populaires -->
 		<aside id="populaires">

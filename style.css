@@ -1,3 +1,4 @@
+/* ----------------Divers---------------- */
 html, body {
     width: auto;
     height: auto;
@@ -17,7 +18,7 @@ h4 {
     font-style: bold;
 }
 
-/*header*/
+/* ----------------header---------------- */
 .topmenu ul {
     list-style-type: none;
     display: flex;    
@@ -45,17 +46,51 @@ li:nth-child(3n) {
     font-weight: bold;
     color: #0065FC;
 }
-/* Media responsive */
+/* ----------------Media responsive---------------- */
 @media screen and (max-width: 970px) {
 }
 
-/* Titres, filtres et formulaire */
+/* ----------------Titres, filtres, info---------------- */
 .sous-titres {
     margin: 5px 35px 0 35px;
+}
+#allfilters
+{
+    width: auto;
 }
 .filters {
     color: #0065FC;
     font-style: bold;  /* pas pris en compte*/
+}
+.eco, .family, .romantic, .animals {   
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px 0 30px;
+}
+.eco i, .family i, .romantic i, .animals i {
+    width: 35px;
+    height: 25px;
+    border: none;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 9px;
+    color: #0065FC;
+}
+.eco span, .family span, .romantic span, .animals span
+{
+    display: flex;
+    margin: 0 0 21px -15px;
+    padding: 6px 17px 6px 25px;
+    border-top: 2px solid #F2F2F2;
+    border-right: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.eco:hover, .family:hover, .heart:hover, .animals:hover
+{
+    color: #0065FC; /* pas pris en compte */
 }
 i#marker.fas.fa-map-marker-alt {    
     background-color: #F2F2F2;
@@ -63,6 +98,16 @@ i#marker.fas.fa-map-marker-alt {
     border-top-left-radius: 13px;
     border-bottom-left-radius: 13px;
 }
+.info {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 35px 0 35px;
+}
+#info500 {
+    /* flex */
+    margin: 0 0 0 10px; /* 8px */
+}
+/* ----------------Formulaire---------------- */
 #button {
     background-color: #0065FC;
     color: white;
@@ -71,7 +116,7 @@ i#marker.fas.fa-map-marker-alt {
     border-top-right-radius: 13px;
     border-bottom-right-radius: 13px;
     font-family: 'Raleway';
-    font-size: 15px;
+    font-size: 15px; /* tester en em */
 }
 .input-field {
     padding: 13px;
@@ -80,16 +125,51 @@ i#marker.fas.fa-map-marker-alt {
     border: 1px solid #F2F2F2;
 }
 
-/* Parties photos */
-#carteshebergement {
-    border-radius: 13px;
+/* ----------------Parties photos---------------- */
+#hebergement {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 910px; /* tester d'autres tailles */
+    height: 620px;
+    margin: 30px 35px 0 35px;
+    border: 5px;
+    border-bottom: 2px;
+    border-radius: 14px;
 }
-
-.framemini {
-    border-radius: 13px;
+#hebergement h2 {
+    margin: 25px 0 0 25px /* tester autres tailles */
 }
-
-/* notation */
+#framemini {
+    display: flex;
+    flex-wrap: wrap;
+}
+#framemini img {
+    width: 250px;
+    height: 120px;
+    border: 5px solid white;
+    border-radius: 14px;
+    border-bottom: 85px solid white;
+    box-shadow: 5px 5px 19px #909090;
+}
+#framemini h4 {
+    margin: -80px 0 0 15px; /* essayer autre margin */
+    font-style: bold;   /* n'est pas pris en compte */
+}
+#framemini p {
+    margin: 7px 0 0 15px;
+    font-size: 0.9em;
+}
+.cannebiere, .hotelport, .mouettes, .hotelmer, .panier, .amina {
+    width: 245px;
+    height: 130px;
+    margin: 30px 15px 80px 30px;  /* essayer autres margin */
+}
+.cannebiere:hover, .hotelport:hover, .mouettes:hover, .hotelmer:hover, .panier:hover, .amina:hover {
+    /* autre possibilité filter: opacity(65%); */
+    filter: drop-shadow(4px 4px 8px #909090);
+}
+/* ----------------Notation---------------- */
 
 .blue {
     color: #0065FC;
@@ -97,8 +177,22 @@ i#marker.fas.fa-map-marker-alt {
 .grey {
     color: #F2F2F2;
 }
-  
-/* Footer */
+#notation {
+    margin: 7px 0 0 15px;
+}
+ 
+/* ----------------Afficher plus---------------- */
+.more a {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    margin: 25px 0 0 35px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* ----------------Footer---------------- */
 .footmenu ul {
     list-style-type: none;
     display: flex;
