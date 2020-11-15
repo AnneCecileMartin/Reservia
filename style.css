@@ -1,9 +1,8 @@
 /* ----------------Divers---------------- */
-html, body {
+html, body, form {
     width: auto;
     height: auto;
     margin: 25px;
-    padding: 0;
     font-family: 'Raleway', sans-serif;
 }
 h2 {
@@ -22,11 +21,13 @@ h4 {
 .topmenu ul {
     list-style-type: none;
     display: flex;    
-    justify-content: flex-end;  
     justify-content: space-between;  
-    page-break-inside: auto;
 }
-nav a {
+.topmenu li:nth-child(3n) {
+    font-weight: bold;
+    color: #0065FC; /* pas pris en compte */
+}
+nav.topmenu a {
     text-decoration: none;
     color: #000000;
 }
@@ -36,16 +37,7 @@ nav a:hover {
     border-top: 2px solid #0065FC; /*pas pris en compte*/
     padding-top: 25px;
 }
-nav a:visited {
-    color: #0065FC;
-    text-decoration: none;
-    border-top: 2px solid #0065FC;
-    padding-top: 25px;
-}
-li:nth-child(3n) {
-    font-weight: bold;
-    color: #0065FC;
-}
+
 /* ----------------Media responsive---------------- */
 @media screen and (max-width: 970px) {
 }
@@ -85,8 +77,8 @@ li:nth-child(3n) {
     border-top: 2px solid #F2F2F2;
     border-right: 2px solid #F2F2F2;
     border-bottom: 2px solid #F2F2F2;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
 }
 .eco:hover, .family:hover, .heart:hover, .animals:hover
 {
@@ -103,9 +95,8 @@ i#marker.fas.fa-map-marker-alt {
     justify-content: flex-start;
     margin: 10px 35px 0 35px;
 }
-#info500 {
-    /* flex */
-    margin: 0 0 0 10px; /* 8px */
+#icon_i {
+    color: #0065FC; /* réduire taille et mettre un border radius et color gris */
 }
 /* ----------------Formulaire---------------- */
 #button {
@@ -125,11 +116,11 @@ i#marker.fas.fa-map-marker-alt {
     border: 1px solid #F2F2F2;
 }
 
-/* ----------------Parties photos---------------- */
+/* ----------------Bloc hébergement---------------- */
 #hebergement {
     display: flex;
     flex-direction: column;
-    background-color: #F2F2F2;
+    background-color: #F2F2F2; /* n'est pas pris en compte */
     width: 910px; /* tester d'autres tailles */
     height: 620px;
     margin: 30px 35px 0 35px;
@@ -150,7 +141,7 @@ i#marker.fas.fa-map-marker-alt {
     border: 5px solid white;
     border-radius: 14px;
     border-bottom: 85px solid white;
-    box-shadow: 5px 5px 19px #909090;
+    box-shadow: 5px 5px 20px #909090;
 }
 #framemini h4 {
     margin: -80px 0 0 15px; /* essayer autre margin */
@@ -160,7 +151,7 @@ i#marker.fas.fa-map-marker-alt {
     margin: 7px 0 0 15px;
     font-size: 0.9em;
 }
-.cannebiere, .hotelport, .mouettes, .hotelmer, .panier, .amina {
+.cannebiere, .hotelport, .mouettes, .hotelmer, .panier, .amina { /* utiliser le nom de div supérieure et selecteur commun */
     width: 245px;
     height: 130px;
     margin: 30px 15px 80px 30px;  /* essayer autres margin */
@@ -169,8 +160,8 @@ i#marker.fas.fa-map-marker-alt {
     /* autre possibilité filter: opacity(65%); */
     filter: drop-shadow(4px 4px 8px #909090);
 }
-/* ----------------Notation---------------- */
 
+/* ----------------Notation---------------- */
 .blue {
     color: #0065FC;
 }
@@ -178,7 +169,7 @@ i#marker.fas.fa-map-marker-alt {
     color: #F2F2F2;
 }
 #notation {
-    margin: 7px 0 0 15px;
+    margin: 10px 0px 0 15px; /* pas pris en compte */
 }
  
 /* ----------------Afficher plus---------------- */
@@ -192,25 +183,149 @@ i#marker.fas.fa-map-marker-alt {
     font-size: 1.1em;
 }
 
-/* ----------------Footer---------------- */
-.footmenu ul {
-    list-style-type: none;
+/* ----------------Bloc populaires---------------- */
+#popular {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 400px;
+    height: 620px;
+    margin: -621px 0 0 990px;
+    border: 5px;
+    border-bottom: 2px;
+    border-radius: 14px;
 }
-nav a
-{
+.titlepopular {
+    margin: 30px 0 20px 30px;   
+}
+#icon_chart {
+    display: flex;
+    margin: -20px 0 0 348px;
+}
+.framepop {
+    display: flex;
+    flex-wrap: wrap ;
+}
+.framepop img {
+    width: 135px;
+    height: 138px;
+    border: 5px solid white;
+    border-right: 195px;
+    box-shadow: 5px 5px 20px #afafaf; /* tester autres dimensions */
+    border-radius: 14px;
+}
+.framepop h4 {
+    margin: -130px -20px 0 30px;
+}
+.framepop p {
+    margin: -6px -50px 0 160px;
+}
+.framepop p:hover {
+    filter: drop-shadow(4px 4px 8px #909090);
+}
+.soleilmatin, .coeureau, .bleublanc {
+    width: 270px;
+    height: 100px;
+    margin: 38px 0 38px 30px;
+}
+/* ----------------Activités---------------- */
+#sectionactivities {
+    margin: 50px 35px 0 35px; /*conflit avec pomegues ? */
+    background-color: white;
+    border: 5px;
+    border-bottom: 2px;
+}
+#activities {  /* a GRIDer */
+    display: flex;
+    flex-wrap: nowrap;
+}
+#vieuxport h4, #calanques h4, #pomegues h4, #frioul h4 {
+    margin: -33px 0 5px 20px;
+}
+#damegarde h4, #longchamp h4 {
+    margin: -33px 0 65px 20px; /* a remonter */
+} 
+#vieuxport img, #calanques img {
+    height: 430px; /* pas pris en compte pour le port */
+    width: 315px;
+    margin-top: 20px;
+    border-bottom: 40px solid white;
+    box-shadow: 2px 2px 20px #afafaf;
+    border-radius: 14px;
+}
+#pomegues img {
+    height: 210px;
+    width: 315px;
+    margin-top: 20px;
+    border-bottom: 40px solid white;
+    box-shadow: 2px 2px 20px #afafaf;
+    border-radius: 14px;
+}
+#frioul img {
+    height: 150px;
+    width: 315px;
+    margin-top: 20px;
+    border-bottom: 40px solid white;
+    box-shadow: 2px 2px 20px #afafaf;
+    border-radius: 14px;
+}
+#damegarde img {
+    height: 180px;
+    width: 315px;
+    border-bottom: 40px solid white;
+    box-shadow: 2px 2px 20px #afafaf;
+    border-radius: 14px;
+}
+#longchamp img {
+    height: 180px;
+    width: 315px;
+    border-bottom: 40px solid white;
+    box-shadow: 2px 2px 20px #afafaf;
+    border-radius: 14px;
+}
+#vieuxport, #pomegues, #calanques {
+    margin : 10px 33px 0 0;
+}
+#frioul {
+    margin: 290px 30px 0 -350px;
+}
+#longchamp {
+    margin:  -25px 0 0 1035px;
+}
+#damegarde {
+    margin : -465px 33px 0 1035px;
+}
+#vieuxport:hover, #pomegues:hover, #frioul:hover, #calanques:hover, #damegarde:hover, #longchamp:hover {
+    filter: drop-shadow(4px 4px 8px #909090);
+}
+/* ----------------Footer---------------- */
+footer {
+    list-style-type: none;
+    background-color:#F2F2F2;
+}
+.apropos, .hebergements, .assistance {
+    margin: 25px 170px 0 0
+}
+.footmenu {
+
+    display: flex;
+    justify-content: center;
+}
+.footmenu li {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.footmenu a {
     text-decoration: none;
     color: #000000;
 }
-nav a:hover
-{
+.footmenu a:hover {
     color: #0065FC;
     text-decoration: none;
     border-top: none;
-    padding-top: 25px;
 }
 
 /*cadres {
     background-color: #DEEBFF;
 }*/
+/* code testé sous edge, chrome, firefox et Brave. */
