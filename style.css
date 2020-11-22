@@ -34,7 +34,7 @@ h4 {
 }
 .topmenu li:nth-child(3n) {
     font-weight: bold;
-    color: #0065FC; /* pas pris en compte */
+    color: #0065FC;                 /* nope */
 }
 nav.topmenu a {
     text-decoration: none;
@@ -49,22 +49,107 @@ nav a:hover {
 
 /* ----------------Media queries / responsive---------------- */
 @media screen and (min-width: 200px) and (max-width: 576px) and (orientation:portrait) {
-    #hebergement {
-        background-color:none;
-    }
-    /* #popular {
-        display: flex;
-        background-color: #F2F2F2;
-        width: 26em;
-        height: 40.625em;
-        margin: -40.6em 0 0 74em;
-        border: 5px;
-        border-bottom: 2px;
-        border-radius: 13px;
-    } */
-}
-@media screen and (max-width: 750px) and (orientation:portrait) {
-
+    
+        nav a:hover {
+            border-top: none;
+            border-bottom: 3px solid #0065FC;
+        }
+        nav li:nth-child(1) {
+            margin: 1em 0 0 -3em;
+            padding: 0 3em 1.5em 3.6em;
+            border-bottom: 4px solid #F2F2F2;
+        }
+        nav li:nth-child(2) {
+            margin: 1em 0 0 -1em;
+            padding: 0 4em 1.5em 3em;
+            border-bottom: 4px solid #F2F2F2;
+        }
+        nav li:nth-child(3) {
+            margin: -2.5em 10em 0 -6em;
+            font-weight: bold;
+        }
+        .sous-titres h1 {
+            padding: -2em 0 0 0.3em;
+            font-size: 1.3em;
+        }
+        .sous-titres h2 {
+            padding: 0 0 1em 0.2em;
+            font-size: 0.9em;
+        }
+        #form {
+            padding: 2.5em -1em 0 -0.5em; 
+        }
+        #marker {
+            border-top-left-radius: 32px;
+            border-bottom-left-radius: 32px;
+            padding-top: 1.25em;
+        }
+        .input-field {
+            width: 11em;
+            font-size: 0.9em;
+        }
+        #button {
+            width: 2.8em;
+            height: 2.8em;
+            font-size: 1em;
+            border-radius: 13px;
+        }
+        .filtereco {
+            margin: 3em 10em 0 -8em;
+        }
+        .filterfam {
+            margin: 3em 10em 0 -8em;
+        }
+        .filterrom {
+            margin: 7em 32.5em 0 -32.5em;
+        }
+        .filterani {
+            margin: 11em 44em 0 -44em;
+        }
+        .filtereco i, .filterfam i, .filterrom i, .filterani i { /*pas pris en compte */
+            margin: 2em -2em 0 1em;
+        }
+        .info i {
+            margin-top: 3px;
+        }
+        .info {
+            font-size: 1em;
+        }
+        #hebergement { /* pas pris en compte */
+            background-color: transparent;
+            margin-bottom: 1em;
+        }
+        #titrehebergement {
+            font-size: 1.3em;
+        }
+        #framemini {
+            flex-direction: column;
+            width: 20em;
+        }
+        #cannebiere img { /* ne prend ni framemini img ni cannebiere img */
+            width: 20em;
+        }
+        .notationH, .notationP {
+            font-size: 0.4em; /**/
+        }
+        #popular {
+            margin: -20em 10em 10em -10em;/**/
+        }
+        .framepop {
+            flex-direction: column;
+            margin-left: 15px;
+        }
+        .activitiesfull h3 {
+            font-size: 0.5em;
+            margin-left: 1em;
+        }
+        .frioul, .longchamp {
+            margin-top: 10em; /**/
+        }
+        .footmenu
+        {
+            font-size: 1em;
+        }
 }
 
 /* ----------------Titres, filtres, info---------------- */
@@ -207,9 +292,13 @@ i#marker {
 }
 .notationH {
     margin: 0.5em 0 0 1em;
+    font-size: 0.9em;
+    font-stretch: ultra-condensed; /* pas pris en compte */
 }
 .notationP {
-    margin: 1.87em 0 0 10em; 
+    margin: 1.87em 0 0 11em;
+    font-size: 0.9em;
+    font-stretch: ultra-condensed; /* pas pris en compte */
 }
  
 /* ----------------Afficher plus---------------- */
