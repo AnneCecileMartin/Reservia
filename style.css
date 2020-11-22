@@ -42,8 +42,8 @@ nav a:hover {
     border-top: 2px solid #0065FC;
 }
 
-/* ----------------Media responsive---------------- */
-@media screen and (min-width: 300px) and (width: 600px) and (orientation:portrait) {
+/* ----------------Media queries / responsive---------------- */
+@media screen and (min-width: 300px) and (width: 650px) and (orientation:portrait) {
 }
 
 /* ----------------Titres, filtres, info---------------- */
@@ -54,41 +54,44 @@ nav a:hover {
         margin: 1.5em;
 }
 .filters {
-    color: #0065FC;
-    margin: 1.5em;
+    display: flex;
+    flex-direction: row;
 }
 .filters a {
-     text-decoration: none;
+    text-decoration: none;
 }
-.eco:hover, .family:hover, .romantic:hover, .animals:hover {
+/* pas pris en compte */
+.filtereco:hover {
     filter: grayscale(1);
 }
-.eco, .family, .romantic, .animals {   
+.allf {   
     display: flex;
-    flex-direction: row;   /*pas pris en compte */
-    justify-content: flex-start;
-    max-width: 13.75em;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #0065FC;
+    margin: 1em;
+    min-width: 50em;
 }
-.eco i, .family i, .romantic i, .animals i {
-    width: 2.19em;
+.allf i {
+    width: 2.3em;
     height: 1.58em;
     border: none;
     background-color: #DEEBFF;
-    border-radius: 3.125em;
+    border-radius: 3.5em;
     text-align: center;
     padding-top: 0.56em;
     color: #0065FC;
 }
-.eco strong, .family strong, .romantic strong, .animals strong {
-    margin: 0 0 1.1em -0.94em;
+.allf strong {
+    margin: 0 0 1.1em -3.2em;
     color: #000000;
     display: flex;
-    padding: 6px 17px 6px 25px;
+    padding: 6px 20px 6px 30px;
     border-top: 2px solid #F2F2F2;
     border-right: 2px solid #F2F2F2;
     border-bottom: 2px solid #F2F2F2;
-    border-top-right-radius: 13px;
-    border-bottom-right-radius: 13px;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
 }
 .info { 
     display: flex;
@@ -184,7 +187,7 @@ i#marker {
     margin: 0.5em 0 0 1em;
 }
 .notationP {
-    margin: 1.87em 0 0 9.5em; 
+    margin: 1.87em 0 0 10em; 
 }
  
 /* ----------------Afficher plus---------------- */
@@ -234,17 +237,17 @@ i#marker {
     object-fit: cover;
 }
 .framepop h4 {
-    margin: -8.75em 0 0 160px;
+    margin: -8.75em 0 0 10em;
 }
 .framepop p {
-    margin: 15px -50px 0 160px;
+    margin: 0.9em -3.13em 0 10em;
 }
 .soleilmatin:hover, .coeureau:hover, .bleublanc:hover {
     filter: drop-shadow(4px 4px 8px #909090);
 }
 .soleilmatin, .coeureau, .bleublanc {
-    width: 300px;
-    height: 100px;
+    width: 18.75em;
+    height: 6.25em;
 }
 
 /* ----------------Activités---------------- */
@@ -262,7 +265,7 @@ i#marker {
 }
 #activities img {
     object-fit: cover;
-    border-bottom: 50px solid white;
+    border-bottom: 3.13em solid white;
     box-shadow: 2px 2px 20px #afafaf;
     border-radius: 13px;
 }
@@ -295,20 +298,20 @@ i#marker {
     margin-top: -13%;
 } 
 #vieuxport img,#calanques img {
-    height: 450px;
-    width: 320px;
+    height: 28.125em;
+    width: 20em;
 }
 #pomegues img {
-    height: 200px;
-    width: 320px;
+    height: 12.5em;
+    width: 20em;
 }
 #frioul img {
-    height: 150px;
-    width: 320px;
+    height: 9.375em;
+    width: 20em;
 }
 #damegarde img, #longchamp img {
-    height: 170px;
-    width: 320px;
+    height: 10.625em;
+    width: 20em;
 }
 #vieuxport h4, #frioul h4, #calanques h4, #longchamp h4 {
     margin: -10% 0 0 5%;
