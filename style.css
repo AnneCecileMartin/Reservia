@@ -213,7 +213,6 @@ article {
 }
 #framemini a {
 	width: 30%;
-	min-width: 255px;
 	height: 200px;
 	background-color: white;
 	border-radius: 20px;
