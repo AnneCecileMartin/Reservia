@@ -1,5 +1,5 @@
 /* ----------------Divers---------------- */
-main {
+main, header {
 	width: 70%;
 	margin: auto;
 }
@@ -138,7 +138,7 @@ section nav li {
 	border: 3px solid #f2f2f2;
 	border-radius: 25px;
 }
-nav i {
+section nav i {
 	color: #0065fc;
 	background-color: #deebff;
 	padding: 12px 4px 12px 4px;
@@ -148,15 +148,15 @@ nav i {
 	font-size: 1.2em;
 	border-radius: 50%;
 }
-nav a {
+section nav a {
 	font-weight: 600;
 	white-space: nowrap;
 }
-nav li:hover {
+section nav li:hover {
 	transform: scale(0.9);
 	background-color: #deebff;
 }
-nav li:hover a {
+section nav li:hover a {
 	color: white;
 }
 #info {
@@ -416,6 +416,10 @@ footer li {
 	padding: 0;
 }
 
+footer a:hover {
+	color: #0065fc;
+}
+
 /* ----------------Media queries / responsive---------------- */
 
 /*---laptops & small screens---*/
@@ -563,7 +567,7 @@ footer li {
 		margin-right: 40px;
 	}
 	section nav li:hover {
-		transform: scale(1.1);
+		transform: scale(0.9);
 	}
 	article, aside {
 		border-radius: 0;
